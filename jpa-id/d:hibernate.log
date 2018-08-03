@@ -1,0 +1,509 @@
+13:47:09,848 DEBUG logging:38 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+13:47:09,985 DEBUG HibernatePersistenceProvider:96 - Located and parsed 2 persistence units; checking each
+13:47:09,986 DEBUG HibernatePersistenceProvider:104 - Checking persistence-unit [name=cn.johnyu.persistence.unit.mysql, explicit-provider=org.hibernate.jpa.HibernatePersistenceProvider] against incoming persistence unit name [cn.johnyu.persistence.unit.mysql]
+13:47:09,987 DEBUG ProviderChecker:87 - Persistence-unit [cn.johnyu.persistence.unit.mysql] requested PersistenceProvider [org.hibernate.jpa.HibernatePersistenceProvider]
+13:47:09,992 DEBUG LogHelper:102 - PersistenceUnitInfo [
+	name: cn.johnyu.persistence.unit.mysql
+	persistence provider classname: org.hibernate.jpa.HibernatePersistenceProvider
+	classloader: null
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: null
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/Users/john/eclipse-workspace-oxygen/jpa/ajpa-parent/jpa-id/target/classes/
+	Shared Cache Mode: null
+	Validation Mode: null
+	Jar files URLs []
+	Managed classes names [
+		cn.johnyu.jpa.converter.pojo.Book
+		cn.johnyu.jpa.converter.pojo.Customer
+		cn.johnyu.jpa.converter.pojo.ItemOrder
+		cn.johnyu.jpa.converter.pojo.Car]
+	Mapping files names []
+	Properties [
+		hibernate.connection.username: root
+		hibernate.connection.password: 123
+		hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+		hibernate.connection.url: jdbc:mysql://localhost:3306/test
+		hibernate.show_sql: true
+		hibernate.connection.driver_class: com.mysql.jdbc.Driver
+		hibernate.hbm2ddl.auto: update]
+13:47:09,996 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+13:47:09,998 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+13:47:10,001 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+13:47:10,112  INFO Version:46 - HHH000412: Hibernate Core {5.3.0.Final}
+13:47:10,113  INFO Environment:213 - HHH000206: hibernate.properties not found
+13:47:10,161 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+13:47:10,180 DEBUG RegionFactoryInitiator:118 - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+13:47:10,181 DEBUG RegionFactoryInitiator:49 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+13:47:10,200  INFO Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.3.Final}
+13:47:10,234 DEBUG BasicTypeRegistry:156 - Adding type registration boolean -> org.hibernate.type.BooleanType@77e4c80f
+13:47:10,235 DEBUG BasicTypeRegistry:156 - Adding type registration boolean -> org.hibernate.type.BooleanType@77e4c80f
+13:47:10,236 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@77e4c80f
+13:47:10,237 DEBUG BasicTypeRegistry:156 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6b53e23f
+13:47:10,238 DEBUG BasicTypeRegistry:156 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@4f9a3314
+13:47:10,238 DEBUG BasicTypeRegistry:156 - Adding type registration yes_no -> org.hibernate.type.YesNoType@176d53b2
+13:47:10,239 DEBUG BasicTypeRegistry:156 - Adding type registration byte -> org.hibernate.type.ByteType@51b7e5df
+13:47:10,240 DEBUG BasicTypeRegistry:156 - Adding type registration byte -> org.hibernate.type.ByteType@51b7e5df
+13:47:10,240 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@51b7e5df
+13:47:10,241 DEBUG BasicTypeRegistry:156 - Adding type registration character -> org.hibernate.type.CharacterType@4206a205
+13:47:10,241 DEBUG BasicTypeRegistry:156 - Adding type registration char -> org.hibernate.type.CharacterType@4206a205
+13:47:10,241 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@4206a205
+13:47:10,242 DEBUG BasicTypeRegistry:156 - Adding type registration short -> org.hibernate.type.ShortType@770c2e6b
+13:47:10,242 DEBUG BasicTypeRegistry:156 - Adding type registration short -> org.hibernate.type.ShortType@770c2e6b
+13:47:10,243 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@770c2e6b
+13:47:10,244 DEBUG BasicTypeRegistry:156 - Adding type registration integer -> org.hibernate.type.IntegerType@448ff1a8
+13:47:10,244 DEBUG BasicTypeRegistry:156 - Adding type registration int -> org.hibernate.type.IntegerType@448ff1a8
+13:47:10,244 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@448ff1a8
+13:47:10,245 DEBUG BasicTypeRegistry:156 - Adding type registration long -> org.hibernate.type.LongType@2357d90a
+13:47:10,246 DEBUG BasicTypeRegistry:156 - Adding type registration long -> org.hibernate.type.LongType@2357d90a
+13:47:10,246 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@2357d90a
+13:47:10,247 DEBUG BasicTypeRegistry:156 - Adding type registration float -> org.hibernate.type.FloatType@2d2e5f00
+13:47:10,247 DEBUG BasicTypeRegistry:156 - Adding type registration float -> org.hibernate.type.FloatType@2d2e5f00
+13:47:10,247 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@2d2e5f00
+13:47:10,248 DEBUG BasicTypeRegistry:156 - Adding type registration double -> org.hibernate.type.DoubleType@57d5872c
+13:47:10,249 DEBUG BasicTypeRegistry:156 - Adding type registration double -> org.hibernate.type.DoubleType@57d5872c
+13:47:10,249 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@57d5872c
+13:47:10,250 DEBUG BasicTypeRegistry:156 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@55040f2f
+13:47:10,251 DEBUG BasicTypeRegistry:156 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@55040f2f
+13:47:10,252 DEBUG BasicTypeRegistry:156 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@75f9eccc
+13:47:10,253 DEBUG BasicTypeRegistry:156 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@75f9eccc
+13:47:10,254 DEBUG BasicTypeRegistry:156 - Adding type registration string -> org.hibernate.type.StringType@5ea434c8
+13:47:10,254 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.String -> org.hibernate.type.StringType@5ea434c8
+13:47:10,254 DEBUG BasicTypeRegistry:156 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@29f69090
+13:47:10,255 DEBUG BasicTypeRegistry:156 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@589b3632
+13:47:10,256 DEBUG BasicTypeRegistry:156 - Adding type registration url -> org.hibernate.type.UrlType@35083305
+13:47:10,256 DEBUG BasicTypeRegistry:156 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@35083305
+13:47:10,257 DEBUG BasicTypeRegistry:156 - Adding type registration Duration -> org.hibernate.type.DurationType@2890c451
+13:47:10,257 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@2890c451
+13:47:10,272 DEBUG BasicTypeRegistry:156 - Adding type registration Instant -> org.hibernate.type.InstantType@5af97850
+13:47:10,272 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@5af97850
+13:47:10,274 DEBUG BasicTypeRegistry:156 - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@691a7f8f
+13:47:10,274 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@691a7f8f
+13:47:10,275 DEBUG BasicTypeRegistry:156 - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@4034c28c
+13:47:10,275 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@4034c28c
+13:47:10,277 DEBUG BasicTypeRegistry:156 - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@3ee0fea4
+13:47:10,277 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@3ee0fea4
+13:47:10,278 DEBUG BasicTypeRegistry:156 - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7920ba90
+13:47:10,278 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7920ba90
+13:47:10,279 DEBUG BasicTypeRegistry:156 - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@3d299e3
+13:47:10,280 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@3d299e3
+13:47:10,283 DEBUG BasicTypeRegistry:156 - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6156496
+13:47:10,283 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6156496
+13:47:10,284 DEBUG BasicTypeRegistry:156 - Adding type registration date -> org.hibernate.type.DateType@5db45159
+13:47:10,285 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@5db45159
+13:47:10,286 DEBUG BasicTypeRegistry:156 - Adding type registration time -> org.hibernate.type.TimeType@327b636c
+13:47:10,286 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@327b636c
+13:47:10,287 DEBUG BasicTypeRegistry:156 - Adding type registration timestamp -> org.hibernate.type.TimestampType@71c8becc
+13:47:10,287 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@71c8becc
+13:47:10,287 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@71c8becc
+13:47:10,289 DEBUG BasicTypeRegistry:156 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@3bd40a57
+13:47:10,289 DEBUG BasicTypeRegistry:156 - Adding type registration calendar -> org.hibernate.type.CalendarType@69930714
+13:47:10,290 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@69930714
+13:47:10,290 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@69930714
+13:47:10,290 DEBUG BasicTypeRegistry:156 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@8909f18
+13:47:10,291 DEBUG BasicTypeRegistry:156 - Adding type registration locale -> org.hibernate.type.LocaleType@6e75aa0d
+13:47:10,291 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@6e75aa0d
+13:47:10,292 DEBUG BasicTypeRegistry:156 - Adding type registration currency -> org.hibernate.type.CurrencyType@7ff95560
+13:47:10,292 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@7ff95560
+13:47:10,293 DEBUG BasicTypeRegistry:156 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@290d210d
+13:47:10,293 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@290d210d
+13:47:10,294 DEBUG BasicTypeRegistry:156 - Adding type registration class -> org.hibernate.type.ClassType@78b729e6
+13:47:10,294 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@78b729e6
+13:47:10,295 DEBUG BasicTypeRegistry:156 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@79ad8b2f
+13:47:10,295 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@79ad8b2f
+13:47:10,296 DEBUG BasicTypeRegistry:156 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@13c10b87
+13:47:10,297 DEBUG BasicTypeRegistry:156 - Adding type registration binary -> org.hibernate.type.BinaryType@7fc2413d
+13:47:10,297 DEBUG BasicTypeRegistry:156 - Adding type registration byte[] -> org.hibernate.type.BinaryType@7fc2413d
+13:47:10,297 DEBUG BasicTypeRegistry:156 - Adding type registration [B -> org.hibernate.type.BinaryType@7fc2413d
+13:47:10,298 DEBUG BasicTypeRegistry:156 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@23986957
+13:47:10,298 DEBUG BasicTypeRegistry:156 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@23986957
+13:47:10,299 DEBUG BasicTypeRegistry:156 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@23986957
+13:47:10,299 DEBUG BasicTypeRegistry:156 - Adding type registration row_version -> org.hibernate.type.RowVersionType@60704c
+13:47:10,300 DEBUG BasicTypeRegistry:156 - Adding type registration image -> org.hibernate.type.ImageType@7692d9cc
+13:47:10,301 DEBUG BasicTypeRegistry:156 - Adding type registration characters -> org.hibernate.type.CharArrayType@4fe767f3
+13:47:10,301 DEBUG BasicTypeRegistry:156 - Adding type registration char[] -> org.hibernate.type.CharArrayType@4fe767f3
+13:47:10,301 DEBUG BasicTypeRegistry:156 - Adding type registration [C -> org.hibernate.type.CharArrayType@4fe767f3
+13:47:10,302 DEBUG BasicTypeRegistry:156 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@5db250b4
+13:47:10,302 DEBUG BasicTypeRegistry:156 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@5db250b4
+13:47:10,302 DEBUG BasicTypeRegistry:156 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@5db250b4
+13:47:10,303 DEBUG BasicTypeRegistry:156 - Adding type registration text -> org.hibernate.type.TextType@37918c79
+13:47:10,303 DEBUG BasicTypeRegistry:156 - Adding type registration ntext -> org.hibernate.type.NTextType@358ee631
+13:47:10,313 DEBUG BasicTypeRegistry:156 - Adding type registration blob -> org.hibernate.type.BlobType@3b07a0d6
+13:47:10,313 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@3b07a0d6
+13:47:10,314 DEBUG BasicTypeRegistry:156 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@14d3bc22
+13:47:10,316 DEBUG BasicTypeRegistry:156 - Adding type registration clob -> org.hibernate.type.ClobType@d706f19
+13:47:10,316 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@d706f19
+13:47:10,317 DEBUG BasicTypeRegistry:156 - Adding type registration nclob -> org.hibernate.type.NClobType@4278a03f
+13:47:10,318 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@4278a03f
+13:47:10,318 DEBUG BasicTypeRegistry:156 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@124c278f
+13:47:10,319 DEBUG BasicTypeRegistry:156 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@1fe20588
+13:47:10,320 DEBUG BasicTypeRegistry:156 - Adding type registration serializable -> org.hibernate.type.SerializableType@7a4ccb53
+13:47:10,322 DEBUG BasicTypeRegistry:156 - Adding type registration object -> org.hibernate.type.ObjectType@2f112965
+13:47:10,323 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@2f112965
+13:47:10,323 DEBUG BasicTypeRegistry:156 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@d4342c2
+13:47:10,323 DEBUG BasicTypeRegistry:156 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@2bbf180e
+13:47:10,323 DEBUG BasicTypeRegistry:156 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@163e4e87
+13:47:10,324 DEBUG BasicTypeRegistry:156 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@56de5251
+13:47:10,324 DEBUG BasicTypeRegistry:156 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@419c5f1a
+13:47:10,324 DEBUG BasicTypeRegistry:156 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@12b0404f
+13:47:10,324 DEBUG BasicTypeRegistry:156 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@769e7ee8
+13:47:10,324 DEBUG BasicTypeRegistry:156 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@5276e6b0
+13:47:10,334 DEBUG BootstrapContextImpl:272 - Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@460d0a57] into BootstrapContext; was [null]
+13:47:10,335 DEBUG BootstrapContextImpl:267 - Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@47d90b9e] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@1184ab05]
+13:47:10,371 DEBUG BootstrapContextImpl:262 - Injecting JPA temp ClassLoader [null] into BootstrapContext; was [null]
+13:47:10,371 DEBUG ClassLoaderAccessImpl:45 - ClassLoaderAccessImpl#injectTempClassLoader(null) [was null]
+13:47:10,382 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+13:47:10,382 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+13:47:10,383 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+13:47:10,383 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+13:47:10,384 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+13:47:10,385 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+13:47:10,385 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+13:47:10,386 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+13:47:10,387 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+13:47:10,388 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+13:47:10,389 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+13:47:10,389 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+13:47:10,390 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+13:47:10,391 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+13:47:10,395  WARN pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+13:47:10,483  INFO pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/test]
+13:47:10,483  INFO pooling:135 - HHH10001001: Connection properties: {user=root, password=123}
+13:47:10,484  INFO pooling:143 - HHH10001003: Autocommit mode: false
+13:47:10,487 DEBUG DriverManagerConnectionProviderImpl:384 - Initializing Connection pool with 1 Connections
+13:47:10,487  INFO DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:47:10,754 DEBUG JdbcEnvironmentInitiator:72 - Database ->
+       name : MySQL
+    version : 5.7.21
+      major : 5
+      minor : 7
+13:47:10,755 DEBUG JdbcEnvironmentInitiator:83 - Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )
+      major : 5
+      minor : 1
+13:47:10,755 DEBUG JdbcEnvironmentInitiator:389 - JDBC version : 4.0
+13:47:10,765  INFO Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+13:47:10,799 DEBUG IdentifierHelperBuilder:117 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+13:47:10,801 DEBUG IdentifierHelperBuilder:191 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+13:47:10,816 DEBUG Namespace:47 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+13:47:10,818 DEBUG TypeConfiguration$Scope:141 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1c7696c6] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@60099951]
+13:47:10,864 DEBUG AnnotationBinder:549 - Binding entity from annotated class: cn.johnyu.jpa.converter.pojo.ItemOrder
+13:47:10,923 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+13:47:10,930 DEBUG EntityBinder:430 - Import with entity name ItemOrder
+13:47:10,933 DEBUG EntityBinder:869 - Bind entity cn.johnyu.jpa.converter.pojo.ItemOrder on table orders
+13:47:10,948 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(orders), mappingColumn=oid, insertable=true, updatable=true, unique=false}
+13:47:10,954 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(orders), mappingColumn=itemId, insertable=true, updatable=true, unique=false}
+13:47:10,955 DEBUG PropertyBinder:175 - MetadataSourceProcessor property itemId with lazy=false
+13:47:10,957 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [cn.johnyu.jpa.converter.pojo.ItemOrder.oid:itemId]
+13:47:10,959 DEBUG SimpleValueBinder:411 - building SimpleValue for itemId
+13:47:10,960 DEBUG PropertyBinder:266 - Building property itemId
+13:47:10,961 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(orders), mappingColumn=providerIde, insertable=true, updatable=true, unique=false}
+13:47:10,962 DEBUG PropertyBinder:175 - MetadataSourceProcessor property providerIde with lazy=false
+13:47:10,962 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [cn.johnyu.jpa.converter.pojo.ItemOrder.oid:providerIde]
+13:47:10,962 DEBUG SimpleValueBinder:411 - building SimpleValue for providerIde
+13:47:10,962 DEBUG PropertyBinder:266 - Building property providerIde
+13:47:10,962 DEBUG PropertyBinder:266 - Building property oid
+13:47:10,963 DEBUG BinderHelper:644 - #makeIdGenerator(org.hibernate.mapping.Component([org.hibernate.mapping.Property(itemId), org.hibernate.mapping.Property(providerIde)]), oid, assigned, , ...)
+13:47:10,964 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(orders), mappingColumn=itemNum, insertable=true, updatable=true, unique=false}
+13:47:10,964 DEBUG PropertyBinder:175 - MetadataSourceProcessor property itemNum with lazy=false
+13:47:10,964 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [cn.johnyu.jpa.converter.pojo.ItemOrder:itemNum]
+13:47:10,964 DEBUG SimpleValueBinder:411 - building SimpleValue for itemNum
+13:47:10,964 DEBUG PropertyBinder:266 - Building property itemNum
+13:47:10,965 DEBUG AnnotationBinder:549 - Binding entity from annotated class: cn.johnyu.jpa.converter.pojo.Car
+13:47:10,965 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+13:47:10,965 DEBUG EntityBinder:430 - Import with entity name Car
+13:47:10,966 DEBUG EntityBinder:869 - Bind entity cn.johnyu.jpa.converter.pojo.Car on table Car
+13:47:10,971 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Car), mappingColumn=id, insertable=true, updatable=true, unique=false}
+13:47:10,972 DEBUG PropertyBinder:175 - MetadataSourceProcessor property id with lazy=false
+13:47:10,972 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [cn.johnyu.jpa.converter.pojo.Car:id]
+13:47:10,972 DEBUG SimpleValueBinder:411 - building SimpleValue for id
+13:47:10,972 DEBUG PropertyBinder:266 - Building property id
+13:47:10,974 DEBUG BinderHelper:644 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.TableGenerator, tableGen01, ...)
+13:47:10,975 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Car), mappingColumn=car_name, insertable=true, updatable=true, unique=false}
+13:47:10,975 DEBUG PropertyBinder:175 - MetadataSourceProcessor property carName with lazy=false
+13:47:10,976 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [cn.johnyu.jpa.converter.pojo.Car:carName]
+13:47:10,976 DEBUG SimpleValueBinder:411 - building SimpleValue for carName
+13:47:10,976 DEBUG PropertyBinder:266 - Building property carName
+13:47:10,976 DEBUG AnnotationBinder:549 - Binding entity from annotated class: cn.johnyu.jpa.converter.pojo.Customer
+13:47:10,976 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+13:47:10,977 DEBUG EntityBinder:430 - Import with entity name Customer
+13:47:10,977 DEBUG EntityBinder:869 - Bind entity cn.johnyu.jpa.converter.pojo.Customer on table Customer
+13:47:10,977 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Customer), mappingColumn=id, insertable=true, updatable=true, unique=false}
+13:47:10,978 DEBUG PropertyBinder:175 - MetadataSourceProcessor property id with lazy=false
+13:47:10,978 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [cn.johnyu.jpa.converter.pojo.Customer:id]
+13:47:10,978 DEBUG SimpleValueBinder:411 - building SimpleValue for id
+13:47:10,978 DEBUG PropertyBinder:266 - Building property id
+13:47:10,978 DEBUG BinderHelper:644 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+13:47:10,978 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Customer), mappingColumn=cname, insertable=true, updatable=true, unique=false}
+13:47:10,978 DEBUG PropertyBinder:175 - MetadataSourceProcessor property cname with lazy=false
+13:47:10,979 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [cn.johnyu.jpa.converter.pojo.Customer:cname]
+13:47:10,979 DEBUG SimpleValueBinder:411 - building SimpleValue for cname
+13:47:10,979 DEBUG PropertyBinder:266 - Building property cname
+13:47:10,979 DEBUG AnnotationBinder:549 - Binding entity from annotated class: cn.johnyu.jpa.converter.pojo.Book
+13:47:10,979 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+13:47:10,979 DEBUG EntityBinder:430 - Import with entity name Book
+13:47:10,979 DEBUG EntityBinder:869 - Bind entity cn.johnyu.jpa.converter.pojo.Book on table Book
+13:47:10,980 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Book), mappingColumn=id, insertable=true, updatable=true, unique=false}
+13:47:10,980 DEBUG PropertyBinder:175 - MetadataSourceProcessor property id with lazy=false
+13:47:10,980 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [cn.johnyu.jpa.converter.pojo.Book:id]
+13:47:10,981 DEBUG SimpleValueBinder:411 - building SimpleValue for id
+13:47:10,981 DEBUG PropertyBinder:266 - Building property id
+13:47:10,981 DEBUG BinderHelper:644 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, uuid, ...)
+13:47:10,981 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Book), mappingColumn=bname, insertable=true, updatable=true, unique=false}
+13:47:10,981 DEBUG PropertyBinder:175 - MetadataSourceProcessor property bname with lazy=false
+13:47:10,981 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [cn.johnyu.jpa.converter.pojo.Book:bname]
+13:47:10,982 DEBUG SimpleValueBinder:411 - building SimpleValue for bname
+13:47:10,982 DEBUG PropertyBinder:266 - Building property bname
+13:47:10,982 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for itemId
+13:47:10,983 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for providerIde
+13:47:10,983 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for itemNum
+13:47:10,983 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for id
+13:47:10,983 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for carName
+13:47:10,983 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for id
+13:47:10,983 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for cname
+13:47:10,983 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for id
+13:47:10,983 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for bname
+13:47:10,985 DEBUG PrimaryKey:35 - Forcing column [itemid] to be non-null as it is part of the primary key for table [orders]
+13:47:10,985 DEBUG PrimaryKey:35 - Forcing column [provideride] to be non-null as it is part of the primary key for table [orders]
+13:47:10,985 DEBUG PrimaryKey:35 - Forcing column [id] to be non-null as it is part of the primary key for table [car]
+13:47:10,985 DEBUG PrimaryKey:35 - Forcing column [id] to be non-null as it is part of the primary key for table [customer]
+13:47:10,985 DEBUG PrimaryKey:35 - Forcing column [id] to be non-null as it is part of the primary key for table [book]
+13:47:10,986 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [cn.johnyu.jpa.converter.pojo.ItemOrder] is safe
+13:47:10,986 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.johnyu.jpa.converter.pojo.ItemOrder
+13:47:10,992 DEBUG PrimaryKey:35 - Forcing column [id] to be non-null as it is part of the primary key for table [seq_table01]
+13:47:11,015  WARN UUIDHexGenerator:42 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+13:47:11,054 DEBUG SessionFactoryImpl:197 - Building session factory
+13:47:11,055 DEBUG Settings:70 - SessionFactory name : null
+13:47:11,056 DEBUG Settings:71 - Automatic flush during beforeCompletion(): enabled
+13:47:11,056 DEBUG Settings:72 - Automatic session close at end of transaction: disabled
+13:47:11,056 DEBUG Settings:74 - Statistics: disabled
+13:47:11,056 DEBUG Settings:76 - Deleted entity synthetic identifier rollback: disabled
+13:47:11,056 DEBUG Settings:77 - Default entity-mode: pojo
+13:47:11,056 DEBUG Settings:78 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+13:47:11,056 DEBUG Settings:79 - Allow initialization of lazy state outside session : disabled
+13:47:11,056 DEBUG Settings:81 - Using BatchFetchStyle : LEGACY
+13:47:11,056 DEBUG Settings:82 - Default batch fetch size: -1
+13:47:11,056 DEBUG Settings:83 - Maximum outer join fetch depth: 2
+13:47:11,056 DEBUG Settings:84 - Default null ordering: NONE
+13:47:11,057 DEBUG Settings:85 - Order SQL updates by primary key: disabled
+13:47:11,057 DEBUG Settings:86 - Order SQL inserts for batching: disabled
+13:47:11,057 DEBUG Settings:88 - multi-tenancy strategy : NONE
+13:47:11,057 DEBUG Settings:90 - JTA Track by Thread: enabled
+13:47:11,057 DEBUG Settings:92 - Query language substitutions: {}
+13:47:11,057 DEBUG Settings:93 - Named query checking : enabled
+13:47:11,058 DEBUG Settings:95 - Second-level cache: disabled
+13:47:11,058 DEBUG Settings:96 - Second-level query cache: disabled
+13:47:11,058 DEBUG Settings:97 - Second-level query cache factory: null
+13:47:11,058 DEBUG Settings:98 - Second-level cache region prefix: null
+13:47:11,058 DEBUG Settings:99 - Optimize second-level cache for minimal puts: disabled
+13:47:11,058 DEBUG Settings:100 - Structured second-level cache entries: disabled
+13:47:11,059 DEBUG Settings:101 - Second-level cache direct-reference entries: disabled
+13:47:11,059 DEBUG Settings:102 - Automatic eviction of collection cache: disabled
+13:47:11,059 DEBUG Settings:104 - JDBC batch size: 15
+13:47:11,059 DEBUG Settings:105 - JDBC batch updates for versioned data: enabled
+13:47:11,059 DEBUG Settings:106 - Scrollable result sets: enabled
+13:47:11,059 DEBUG Settings:107 - Wrap result sets: disabled
+13:47:11,059 DEBUG Settings:108 - JDBC3 getGeneratedKeys(): enabled
+13:47:11,059 DEBUG Settings:109 - JDBC result set fetch size: null
+13:47:11,060 DEBUG Settings:110 - Connection release mode: AFTER_TRANSACTION
+13:47:11,060 DEBUG Settings:111 - Generate SQL with comments: disabled
+13:47:11,060 DEBUG Settings:113 - JPA compliance - query : 
+13:47:11,060 DEBUG Settings:114 - JPA compliance - closed-handling : 
+13:47:11,060 DEBUG Settings:115 - JPA compliance - lists : 
+13:47:11,060 DEBUG Settings:116 - JPA compliance - transactions : 
+13:47:11,112 DEBUG SessionFactoryImpl:252 - Session factory constructed with filter configurations : {}
+13:47:11,112 DEBUG SessionFactoryImpl:253 - Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, http.proxyHost=127.0.0.1, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, java.class.path=/Users/john/eclipse-workspace-oxygen/jpa/ajpa-parent/jpa-id/target/test-classes:/Users/john/eclipse-workspace-oxygen/jpa/ajpa-parent/jpa-id/target/classes:/Users/john/eclipse-workspace-oxygen/jpa/ajpa-parent/jpa-id/ojdbc6.jar:/Users/john/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/john/.m2/repository/org/hibernate/hibernate-core/5.3.0.Final/hibernate-core-5.3.0.Final.jar:/Users/john/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/john/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/john/.m2/repository/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.jar:/Users/john/.m2/repository/net/bytebuddy/byte-buddy/1.8.0/byte-buddy-1.8.0.jar:/Users/john/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/john/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.1.Final/jboss-transaction-api_1.2_spec-1.0.1.Final.jar:/Users/john/.m2/repository/org/jboss/jandex/2.0.3.Final/jandex-2.0.3.Final.jar:/Users/john/.m2/repository/com/fasterxml/classmate/1.3.0/classmate-1.3.0.jar:/Users/john/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/john/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.3.Final/hibernate-commons-annotations-5.0.3.Final.jar:/Users/john/.m2/repository/org/hibernate/hibernate-entitymanager/5.3.0.Final/hibernate-entitymanager-5.3.0.Final.jar:/Users/john/.m2/repository/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40.jar:/Users/john/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/john/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, https.proxyPort=53639, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, java.vendor.url=http://java.oracle.com/, user.timezone=Asia/Shanghai, os.name=Mac OS X, java.vm.specification.version=1.8, user.country=CN, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib, sun.java.command=cn.johnyu.jpa.id.CurdTestWithMysql, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, sun.cpu.endian=little, user.home=/Users/john, user.language=zh, java.specification.vendor=Oracle Corporation, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre, https.proxyHost=127.0.0.1, file.separator=/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes, hibernate.hbm2ddl.auto=update, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.runtime.version=1.8.0_144-b01, user.name=john, path.separator=:, hibernate.connection.username=****, os.version=10.12.6, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/test, hibernate.ejb.persistenceUnitName=cn.johnyu.persistence.unit.mysql, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, hibernate.connection.driver_class=com.mysql.jdbc.Driver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=/var/folders/m3/qlpw62qs5zq29sbvt05xl_680000gn/T/, java.version=1.8.0_144, user.dir=/Users/john/eclipse-workspace-oxygen/jpa/ajpa-parent/jpa-id, os.arch=x86_64, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, sun.os.patch.level=unknown, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@2445445a, java.library.path=/Users/john/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vm.info=mixed mode, java.vendor=Oracle Corporation, java.vm.version=25.144-b01, hibernate.bytecode.use_reflection_optimizer=false, java.ext.dirs=/Users/john/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, sun.io.unicode.encoding=UnicodeBig, java.class.version=52.0, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, http.proxyPort=53639}
+13:47:11,123 DEBUG JaccIntegrator:80 - Skipping JACC integration as it was not enabled
+13:47:11,128 DEBUG SessionFactoryImpl:292 - Instantiated session factory
+13:47:11,128 DEBUG TypeConfiguration$Scope:146 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1c7696c6] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@6127a7e]
+13:47:11,128 DEBUG TypeConfiguration$Scope:148 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1c7696c6] to SessionFactory [org.hibernate.internal.SessionFactoryImpl@6127a7e]
+13:47:11,128  WARN TypeConfiguration$Scope:273 - HHH000233: Scoping types to session factory org.hibernate.internal.SessionFactoryImpl@6127a7e after already scoped org.hibernate.internal.SessionFactoryImpl@6127a7e
+13:47:11,156 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [cn.johnyu.jpa.converter.pojo.ItemOrder] is safe
+13:47:11,157 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.johnyu.jpa.converter.pojo.ItemOrder
+13:47:11,354 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [cn.johnyu.jpa.converter.pojo.Car] is safe
+13:47:11,355 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.johnyu.jpa.converter.pojo.Car
+13:47:11,355 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [cn.johnyu.jpa.converter.pojo.Car] is safe
+13:47:11,355 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.johnyu.jpa.converter.pojo.Car
+13:47:11,370 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [cn.johnyu.jpa.converter.pojo.Customer] is safe
+13:47:11,370 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.johnyu.jpa.converter.pojo.Customer
+13:47:11,370 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [cn.johnyu.jpa.converter.pojo.Customer] is safe
+13:47:11,370 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.johnyu.jpa.converter.pojo.Customer
+13:47:11,381 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [cn.johnyu.jpa.converter.pojo.Book] is safe
+13:47:11,382 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.johnyu.jpa.converter.pojo.Book
+13:47:11,382 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [cn.johnyu.jpa.converter.pojo.Book] is safe
+13:47:11,382 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : cn.johnyu.jpa.converter.pojo.Book
+13:47:11,397 DEBUG AbstractEntityPersister:3738 - Static SQL for entity: cn.johnyu.jpa.converter.pojo.ItemOrder
+13:47:11,397 DEBUG AbstractEntityPersister:3743 -  Version select: select itemId, providerIde from orders where itemId =? and providerIde =?
+13:47:11,397 DEBUG AbstractEntityPersister:3746 -  Snapshot select: select itemorder_.itemId, itemorder_.providerIde, itemorder_.itemNum as itemNum3_3_ from orders itemorder_ where itemorder_.itemId=? and itemorder_.providerIde=?
+13:47:11,398 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into orders (itemNum, itemId, providerIde) values (?, ?, ?)
+13:47:11,398 DEBUG AbstractEntityPersister:394 -  Update 0: update orders set itemNum=? where itemId=? and providerIde=?
+13:47:11,398 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from orders where itemId=? and providerIde=?
+13:47:11,414 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@76318a7d]
+13:47:11,415 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0>-id -> org.hibernate.loader.plan.build.internal.spaces.CompositeQuerySpaceImpl@411341bd]
+13:47:11,420 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : itemId
+13:47:11,420 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : providerIde
+13:47:11,420 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : itemNum
+13:47:11,420 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+13:47:11,432 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+13:47:11,436 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=cn.johnyu.jpa.converter.pojo.ItemOrder)
+    - Returns
+       - EntityReturnImpl(entity=cn.johnyu.jpa.converter.pojo.ItemOrder, querySpaceUid=<gen:0>, path=cn.johnyu.jpa.converter.pojo.ItemOrder)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.johnyu.jpa.converter.pojo.ItemOrder)
+          - SQL table alias mapping - itemorder0_
+          - alias suffix - 0_
+          - suffixed key columns - {itemId1_3_0_, provider2_3_0_}
+          - JOIN (JoinDefinedByMetadata(id)) : <gen:0> -> <gen:0>-id
+             - CompositeQuerySpaceImpl(uid=<gen:0>-id)
+                - SQL table alias mapping - itemorder0_
+
+13:47:11,438 DEBUG EntityLoader:137 - Static select for entity cn.johnyu.jpa.converter.pojo.ItemOrder [NONE]: select itemorder0_.itemId as itemId1_3_0_, itemorder0_.providerIde as provider2_3_0_, itemorder0_.itemNum as itemNum3_3_0_ from orders itemorder0_ where itemorder0_.itemId=? and itemorder0_.providerIde=?
+13:47:11,438 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@499b2a5c]
+13:47:11,439 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0>-id -> org.hibernate.loader.plan.build.internal.spaces.CompositeQuerySpaceImpl@596df867]
+13:47:11,439 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : itemId
+13:47:11,439 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : providerIde
+13:47:11,439 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : itemNum
+13:47:11,439 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+13:47:11,439 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+13:47:11,440 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=cn.johnyu.jpa.converter.pojo.ItemOrder)
+    - Returns
+       - EntityReturnImpl(entity=cn.johnyu.jpa.converter.pojo.ItemOrder, querySpaceUid=<gen:0>, path=cn.johnyu.jpa.converter.pojo.ItemOrder)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.johnyu.jpa.converter.pojo.ItemOrder)
+          - SQL table alias mapping - itemorder0_
+          - alias suffix - 0_
+          - suffixed key columns - {itemId1_3_0_, provider2_3_0_}
+          - JOIN (JoinDefinedByMetadata(id)) : <gen:0> -> <gen:0>-id
+             - CompositeQuerySpaceImpl(uid=<gen:0>-id)
+                - SQL table alias mapping - itemorder0_
+
+13:47:11,440 DEBUG EntityLoader:137 - Static select for entity cn.johnyu.jpa.converter.pojo.ItemOrder [READ]: select itemorder0_.itemId as itemId1_3_0_, itemorder0_.providerIde as provider2_3_0_, itemorder0_.itemNum as itemNum3_3_0_ from orders itemorder0_ where itemorder0_.itemId=? and itemorder0_.providerIde=?
+13:47:11,453 DEBUG Loader:38 - Static select for action ACTION_MERGE on entity cn.johnyu.jpa.converter.pojo.ItemOrder: select itemorder0_.itemId as itemId1_3_0_, itemorder0_.providerIde as provider2_3_0_, itemorder0_.itemNum as itemNum3_3_0_ from orders itemorder0_ where itemorder0_.itemId=? and itemorder0_.providerIde=?
+13:47:11,453 DEBUG Loader:38 - Static select for action ACTION_REFRESH on entity cn.johnyu.jpa.converter.pojo.ItemOrder: select itemorder0_.itemId as itemId1_3_0_, itemorder0_.providerIde as provider2_3_0_, itemorder0_.itemNum as itemNum3_3_0_ from orders itemorder0_ where itemorder0_.itemId=? and itemorder0_.providerIde=?
+13:47:11,453 DEBUG AbstractEntityPersister:3738 - Static SQL for entity: cn.johnyu.jpa.converter.pojo.Car
+13:47:11,453 DEBUG AbstractEntityPersister:3743 -  Version select: select id from Car where id =?
+13:47:11,454 DEBUG AbstractEntityPersister:3746 -  Snapshot select: select car_.id, car_.car_name as car_name2_1_ from Car car_ where car_.id=?
+13:47:11,454 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into Car (car_name, id) values (?, ?)
+13:47:11,454 DEBUG AbstractEntityPersister:394 -  Update 0: update Car set car_name=? where id=?
+13:47:11,454 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from Car where id=?
+13:47:11,454 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@31c269fd]
+13:47:11,454 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : carName
+13:47:11,454 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+13:47:11,455 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+13:47:11,455 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=cn.johnyu.jpa.converter.pojo.Car)
+    - Returns
+       - EntityReturnImpl(entity=cn.johnyu.jpa.converter.pojo.Car, querySpaceUid=<gen:0>, path=cn.johnyu.jpa.converter.pojo.Car)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.johnyu.jpa.converter.pojo.Car)
+          - SQL table alias mapping - car0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+13:47:11,456 DEBUG EntityLoader:137 - Static select for entity cn.johnyu.jpa.converter.pojo.Car [NONE]: select car0_.id as id1_1_0_, car0_.car_name as car_name2_1_0_ from Car car0_ where car0_.id=?
+13:47:11,456 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2a7b6f69]
+13:47:11,456 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : carName
+13:47:11,456 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+13:47:11,456 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+13:47:11,456 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=cn.johnyu.jpa.converter.pojo.Car)
+    - Returns
+       - EntityReturnImpl(entity=cn.johnyu.jpa.converter.pojo.Car, querySpaceUid=<gen:0>, path=cn.johnyu.jpa.converter.pojo.Car)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.johnyu.jpa.converter.pojo.Car)
+          - SQL table alias mapping - car0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+13:47:11,457 DEBUG EntityLoader:137 - Static select for entity cn.johnyu.jpa.converter.pojo.Car [READ]: select car0_.id as id1_1_0_, car0_.car_name as car_name2_1_0_ from Car car0_ where car0_.id=?
+13:47:11,457 DEBUG Loader:38 - Static select for action ACTION_MERGE on entity cn.johnyu.jpa.converter.pojo.Car: select car0_.id as id1_1_0_, car0_.car_name as car_name2_1_0_ from Car car0_ where car0_.id=?
+13:47:11,457 DEBUG Loader:38 - Static select for action ACTION_REFRESH on entity cn.johnyu.jpa.converter.pojo.Car: select car0_.id as id1_1_0_, car0_.car_name as car_name2_1_0_ from Car car0_ where car0_.id=?
+13:47:11,459 DEBUG AbstractEntityPersister:3738 - Static SQL for entity: cn.johnyu.jpa.converter.pojo.Customer
+13:47:11,459 DEBUG AbstractEntityPersister:3743 -  Version select: select id from Customer where id =?
+13:47:11,459 DEBUG AbstractEntityPersister:3746 -  Snapshot select: select customer_.id, customer_.cname as cname2_2_ from Customer customer_ where customer_.id=?
+13:47:11,459 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into Customer (cname, id) values (?, ?)
+13:47:11,459 DEBUG AbstractEntityPersister:394 -  Update 0: update Customer set cname=? where id=?
+13:47:11,459 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from Customer where id=?
+13:47:11,459 DEBUG AbstractEntityPersister:3754 -  Identity insert: insert into Customer (cname) values (?)
+13:47:11,459 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1edb61b1]
+13:47:11,459 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : cname
+13:47:11,460 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+13:47:11,460 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+13:47:11,460 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=cn.johnyu.jpa.converter.pojo.Customer)
+    - Returns
+       - EntityReturnImpl(entity=cn.johnyu.jpa.converter.pojo.Customer, querySpaceUid=<gen:0>, path=cn.johnyu.jpa.converter.pojo.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.johnyu.jpa.converter.pojo.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+13:47:11,460 DEBUG EntityLoader:137 - Static select for entity cn.johnyu.jpa.converter.pojo.Customer [NONE]: select customer0_.id as id1_2_0_, customer0_.cname as cname2_2_0_ from Customer customer0_ where customer0_.id=?
+13:47:11,460 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@cc62a3b]
+13:47:11,460 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : cname
+13:47:11,461 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+13:47:11,461 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+13:47:11,461 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=cn.johnyu.jpa.converter.pojo.Customer)
+    - Returns
+       - EntityReturnImpl(entity=cn.johnyu.jpa.converter.pojo.Customer, querySpaceUid=<gen:0>, path=cn.johnyu.jpa.converter.pojo.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.johnyu.jpa.converter.pojo.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+13:47:11,461 DEBUG EntityLoader:137 - Static select for entity cn.johnyu.jpa.converter.pojo.Customer [READ]: select customer0_.id as id1_2_0_, customer0_.cname as cname2_2_0_ from Customer customer0_ where customer0_.id=?
+13:47:11,461 DEBUG Loader:38 - Static select for action ACTION_MERGE on entity cn.johnyu.jpa.converter.pojo.Customer: select customer0_.id as id1_2_0_, customer0_.cname as cname2_2_0_ from Customer customer0_ where customer0_.id=?
+13:47:11,461 DEBUG Loader:38 - Static select for action ACTION_REFRESH on entity cn.johnyu.jpa.converter.pojo.Customer: select customer0_.id as id1_2_0_, customer0_.cname as cname2_2_0_ from Customer customer0_ where customer0_.id=?
+13:47:11,462 DEBUG AbstractEntityPersister:3738 - Static SQL for entity: cn.johnyu.jpa.converter.pojo.Book
+13:47:11,462 DEBUG AbstractEntityPersister:3743 -  Version select: select id from Book where id =?
+13:47:11,462 DEBUG AbstractEntityPersister:3746 -  Snapshot select: select book_.id, book_.bname as bname2_0_ from Book book_ where book_.id=?
+13:47:11,462 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into Book (bname, id) values (?, ?)
+13:47:11,462 DEBUG AbstractEntityPersister:394 -  Update 0: update Book set bname=? where id=?
+13:47:11,462 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from Book where id=?
+13:47:11,462 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@29539e36]
+13:47:11,462 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : bname
+13:47:11,462 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+13:47:11,462 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+13:47:11,463 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=cn.johnyu.jpa.converter.pojo.Book)
+    - Returns
+       - EntityReturnImpl(entity=cn.johnyu.jpa.converter.pojo.Book, querySpaceUid=<gen:0>, path=cn.johnyu.jpa.converter.pojo.Book)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.johnyu.jpa.converter.pojo.Book)
+          - SQL table alias mapping - book0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+13:47:11,463 DEBUG EntityLoader:137 - Static select for entity cn.johnyu.jpa.converter.pojo.Book [NONE]: select book0_.id as id1_0_0_, book0_.bname as bname2_0_0_ from Book book0_ where book0_.id=?
+13:47:11,463 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@f5c79a6]
+13:47:11,463 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : bname
+13:47:11,463 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+13:47:11,463 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+13:47:11,464 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=cn.johnyu.jpa.converter.pojo.Book)
+    - Returns
+       - EntityReturnImpl(entity=cn.johnyu.jpa.converter.pojo.Book, querySpaceUid=<gen:0>, path=cn.johnyu.jpa.converter.pojo.Book)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=cn.johnyu.jpa.converter.pojo.Book)
+          - SQL table alias mapping - book0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+13:47:11,464 DEBUG EntityLoader:137 - Static select for entity cn.johnyu.jpa.converter.pojo.Book [READ]: select book0_.id as id1_0_0_, book0_.bname as bname2_0_0_ from Book book0_ where book0_.id=?
+13:47:11,464 DEBUG Loader:38 - Static select for action ACTION_MERGE on entity cn.johnyu.jpa.converter.pojo.Book: select book0_.id as id1_0_0_, book0_.bname as bname2_0_0_ from Book book0_ where book0_.id=?
+13:47:11,464 DEBUG Loader:38 - Static select for action ACTION_REFRESH on entity cn.johnyu.jpa.converter.pojo.Book: select book0_.id as id1_0_0_, book0_.bname as bname2_0_0_ from Book book0_ where book0_.id=?
+13:47:11,501  INFO access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4201a617] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+13:47:11,540 DEBUG Table:528 - No alter strings for table : Book
+13:47:11,541 DEBUG Table:528 - No alter strings for table : Car
+13:47:11,541 DEBUG Table:528 - No alter strings for table : Customer
+13:47:11,541 DEBUG Table:528 - No alter strings for table : orders
+13:47:11,541 DEBUG Table:528 - No alter strings for table : seq_table01
+13:47:11,542 DEBUG JtaPlatformInitiator:43 - No JtaPlatform was specified, checking resolver
+13:47:11,543 DEBUG JtaPlatformResolverInitiator:33 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+13:47:11,545 DEBUG StandardJtaPlatformResolver:110 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:47:11,546 DEBUG NamedQueryRepository:151 - Checking 0 named HQL queries
+13:47:11,547 DEBUG NamedQueryRepository:167 - Checking 0 named SQL queries
+13:47:11,548 DEBUG SessionFactoryRegistry:52 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@4837595f
+13:47:11,549 DEBUG SessionFactoryRegistry:74 - Registering SessionFactory: cb57d6a5-f8b5-43bd-9598-64944b251d82 (<unnamed>)
+13:47:11,549 DEBUG SessionFactoryRegistry:81 - Not binding SessionFactory to JNDI, no JNDI name configured
+13:47:40,760 DEBUG DriverManagerConnectionProviderImpl:291 - Connection pool now considered primed; min-size will be maintained
