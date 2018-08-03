@@ -39,6 +39,7 @@
 		<module>jpa2-element-collection-table</module>
 		<module>jpa2-element-collection-map-key</module>
 		<module>jpa-converter</module>
+		<module>jpa-id</module>
 	</modules>
 
 
