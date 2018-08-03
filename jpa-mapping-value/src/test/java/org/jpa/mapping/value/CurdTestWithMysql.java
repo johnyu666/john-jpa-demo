@@ -1,26 +1,32 @@
-package cn.johnyu.jpa.id;
+package org.jpa.mapping.value;
 
 import static org.junit.Assert.*;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.sql.Blob;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import javax.persistence.PersistenceContext;
 
+import org.hibernate.engine.jdbc.BlobImplementer;
 import org.hibernate.id.uuid.CustomVersionOneStrategy;
+import org.hibernate.type.BlobType;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import cn.johnyu.jpa.converter.pojo.Book;
-import cn.johnyu.jpa.converter.pojo.Car;
-import cn.johnyu.jpa.converter.pojo.Customer;
-import cn.johnyu.jpa.converter.pojo.ItemStore;
+
 
 public class CurdTestWithMysql {
 	private static EntityManagerFactory entityManagerFactory = null;
@@ -53,56 +59,48 @@ public class CurdTestWithMysql {
 		tx.begin();
 		entityManager.persist(c);
 		tx.commit();
-		
+		//缓存清空
+		entityManager.clear();
 		return c;
 	}
 	
-	private Book addBook() {
-		Book book=new Book();
-		book.setBname("Harry poltt");
+	private Customer addFullCustomer() throws Exception{
+		InputStream in=new FileInputStream("favicon.ico");
+		byte[] buf=new byte[in.available()];
+		in.read(buf);
 		
-		EntityTransaction tx = entityManager.getTransaction();
-		tx.begin();
-		entityManager.persist(book);
-		tx.commit();
-		return book;
-	}
-
-	@Test
-	public void testAddCustomer() throws Exception {
-		Customer c=addCustomer();
-		System.out.println(c.getId());
-	}
-	
-	@Test
-	public void testAddBook() throws Exception {
-		Book book=addBook();
-		System.out.println(book.getId());
-	}
-	
-	@Test
-	public void testAddCar() throws Exception {
-		Car c=new Car();
-		c.setCarName("buck");
+		Customer c = new Customer();
+		c.setCname("JohnYu");
+		c.setBirth(new Date());
+		c.setSalary(345.987);
+		c.setLogo(buf);
 		EntityTransaction tx = entityManager.getTransaction();
 		tx.begin();
 		entityManager.persist(c);
 		tx.commit();
-		System.out.println(c.getId());
+		//缓存清空
+		entityManager.clear();
+		return c;
 	}
-
+	
 	@Test
-	public void testAddItemStore() throws Exception {
-		ItemStore its=new ItemStore();
-		its.setBaseId(2);
-		its.setItemId(1);
-		its.setItemNum(23);
-		EntityTransaction tx = entityManager.getTransaction();
-		tx.begin();
-		entityManager.persist(its);
-		tx.commit();
+	public void testAddCustomer() throws Exception {
+		addFullCustomer();
 	}
-
+	@Test
+	public void testLoadCustomer() throws Exception {
+		Customer c= addFullCustomer();
+		Customer c1=entityManager.find(Customer.class, c.getId());
+		
+		System.out.println(c1.getCname());
+		byte[] logo=c1.getLogo();
+		System.out.println(logo.length);
+		OutputStream out=new FileOutputStream("logo1.ico");
+		out.write(logo);
+		out.close();
+	}
+	
+	
 	public static void main(String[] args) {
 		entityManagerFactory = Persistence.createEntityManagerFactory("cn.johnyu.persistence.unit.mysql");
 	}
